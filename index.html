@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B Testing</title>
+   
+    <link rel="stylesheet" href="css/styles.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+  </head>
+
+
+<body>
+  <!-- making a wrapper element -->
+    <div class="wrapper"> 
+      <header> 
+
+        <h1> A/B Testing </h1>
+
+
+        <div class="overview">
+            <h2> Overview </h2>
+            <p> The goal of this project was to test the difference between page A and page B to see which is most successful in obtaining success in the task of scheduling an appointment
+              The main aim of the project is to understand how even minor changes in design have the ability to impact user interactions and 
+            how A/B testing is one the best ways to understand how those interactins may differ </p>
+
+
+          <h2> The Change</h2>
+          <p>  
+            I altered page B by changing the appointment button to a darker color. My aim was to instantly direct the eye to setting appointments and 
+            in doing so minimising the time the user spends searching for an appointment button. 
+          </p>
+
+          <!-- #picture of the change  -->
+
+          <div class="card" aria-label="phone">
+            <div class="card-details"> 
+              <div>
+                <img src = "Screen Shot 2024-03-13 at 3.34.24 PM.png">
+              </div>
+
+          <h2> Comptutations and Hypthesis  </h2>
+           
+
+           <h3>Misclick Hypothesis </h3> 
+<ul>  
+  <li> 
+Null Hypothesis: The misclick rate of page A is the same as the misclick rate of page B </li>
+<li>Alternate Hypothesis: The rate of misclicks in page A is greater than the rate of misclicks in page B </li>
+<li> Justification for Alterate: The color change in B will make the eye drift there immediately and reduce the misclicks to the button </li>
+
+</ul>
+
+
+<h3> Time Hypothesis </h3>
+
+<ul>  
+  <li> 
+Null Hypothesis: The time take on page A is the same as the time taken on page B </li>
+<li>Alternate Hypothesis: The time on page A is greater than the time taken on page B 
+</li>
+<li> Justification for Alterate: The color change in B will make the eye drift there immediately and reduce the time to make an appointment</li>
+
+</ul>
+
+<h3>  Number of Clicks Hypothesis   </h3>
+<p> I chose number of clicks to see if the efficiency of clicks changes with a change in page  </p>
+
+<ul>  
+  <li> 
+Null Hypothesis: The number of clicks on page A is the same as the number of clicks on page B </li>
+<li>Alternate Hypothesis: The number of clicks on page A is greater than the number of clicks on page B  </li>
+<li> Justification for Alterate: The color change in B will make the eye drift there immediately and reduce the number of clicks to make an appointment</li>
+
+</ul>
+
+<ul> 
+
+<Li>      Misclick rate:			Chi-squared test      </Li>
+<Li>     Time on page:			one tailed T test     </Li>
+<Li>         Number of clicks:		one tailed T test   </Li>
+ </ul>
+
+            
+          </p>
+
+         
+        </div>
+
+        <div class="misclicks">
+
+          <h2>  MISCLICK TEST   </h2>
+
+          <div class="card2" aria-label="phone">
+            <div class="card-details2"> 
+              <div>
+                <img src = "Screen Shot 2024-03-12 at 5.00.20 PM.png">
+              </div>
+
+            </div>
+
+
+            <p>  I chose chi square because this was a categorical test and the variable I am looking it is a categorical variable. 
+
+
+              A 0.05 p-value, the assumption that there is a 95% confidence that there is a difference between the data. However, the p-value obtained is around 0.123 which is significantly higher than 0.05. Given this it becomes clear that there is not a significant difference or enough evidence to reject the null hypothesis. 
+              This test fails to reject the null hypothesis. 
+                </p>
+
+
+        </div>
+
+
+
+        <div class="misclicks">
+
+          <h2>  Time on page   </h2>
+
+          <div class="card2" aria-label="phone">
+            <div class="card-details2"> 
+              <div>
+                <img src = "Screen Shot 2024-03-12 at 5.12.58 PM.png">
+              </div>
+
+            </div>
+
+
+            <p>  I chose a one-tailed test as my variables were numerical and the test is to decide whether there is a significant difference between B and A where B takes less time. 
+
+              Based on the p value, a 0.05 p value indicates a significant difference between the two pages. The p value i obtained was 0.0464 B is less than A, indicating that the mean of B is significantly less than the mean of A. 
+              
+              Therefore we have sufficient evidence to reject the null hypothesis and accept the alternative hypothesis. 
+              
+                </p>
+
+
+        </div>
+
+        <div class="misclicks">
+
+          <h2>  Number of clicks   </h2>
+
+          <p>I chose a one-tailed test as my variables were numerical and the test is to decide whether there is a significant difference between B and A where B takes less num_click
+
+            Based on the p value, a 0.05 p value indicates a significant difference between the two pages. The p value i obtained was 0.106 which indicates that there is no significant difference. 
+            
+            Therefore, we dont have significant evidence to reject the null hypothesis.</p>
+
+          <div class="card2" aria-label="phone">
+            <div class="card-details2"> 
+              <div>
+                <img src = "Screen Shot 2024-03-12 at 5.20.10 PM.png">
+              </div>
+
+            </div>
+          </div>
+
+
+          
+
+
+        </div>
+
+
+
+
+    
+
+        <div class="misclicks">
+
+          <h2>  Summary Statistics  </h2>
+
+          <p> Based on the average and variance of A and B what I understood is while the mean may seem to indicate a slight 
+          lean towards on page it is important to take the variance into account because a higher variance means that the overlap is greater and the p-value becomes more 
+          difficult to decipher. My understanding when A/B testing is that simply looking at mean/mode are not viable methods
+          to know if one out performs the other and it is important to check multiple features to see if a difference was made. In thsi scenario, 
+          I do not believe that my change was likely more successful than A as it did not reject the null hypothesis.  </p>
+
+         
+
+
+      
+
+        </div>
+ </html> 
+
+
+
+   
+
+
+
+  
+
+
+         
+            
+          
+
+                  
+        
+        
+        
+        
+        
+                       
+
+
+
+        </div>
+
